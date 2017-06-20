@@ -1,11 +1,11 @@
-// import loading from './loading'
-// import loadError from './loadError'
+import loading from './loading'
+import loadError from './loadError'
 import games from './games'
-// import currentUser from './currentUser'
+import currentUser from './currentUser'
 
 export default {
-  // loading,
-  // loadError,
-  games
-  // currentUser,
+  loading,
+  loadError,
+  games,
+  currentUser,
 }
