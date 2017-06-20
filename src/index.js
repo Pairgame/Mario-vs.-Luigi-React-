@@ -4,8 +4,10 @@ import { Router, Route, IndexRoute } from 'react-router'
 import App from './App';
 import store, { history } from './store'
 import registerServiceWorker from './registerServiceWorker';
-
+import injectTapEventPlugin from 'react-tap-event-plugin'
 // import './index.css';
+
+injectTapEventPlugin();
 
 ReactDOM.render(
   <App>
