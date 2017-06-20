@@ -13,10 +13,7 @@
   },
   "devDependencies": {
     "node-sass-chokidar": "^0.0.3",
-<<<<<<< HEAD
     "npm-run-all": "^4.0.2",
-=======
->>>>>>> 25dbc0ae33a89b623e36b4d77bd717e7cd090f0b
     "react-scripts": "1.0.7"
   },
   "scripts": {
