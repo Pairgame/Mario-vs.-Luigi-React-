@@ -19,6 +19,14 @@ class Lobby extends PureComponent {
     if (!subscribed) subscribeToGames()
   }
 
+  goToGame(gameId) {
+    const { push } = this.props
+
+    return () => {
+      push(`/games/${gameId}`)
+    }
+  }
+
     isJoinable(game) {
     if (game.started) return false
     return !!!this.isPlayer(game)
@@ -39,7 +47,7 @@ class Lobby extends PureComponent {
           key={index}
           onClick={this.goToGame(game._id).bind(this)}
           rightIcon={<ActionIcon />}
-          primaryText={`${game.owner.name}'s Game`} />
+          primaryText={`Mario's Game`} />
       )
     }
 
