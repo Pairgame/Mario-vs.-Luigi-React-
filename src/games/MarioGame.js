@@ -35,4 +35,4 @@ const mapStateToProps = ({ games, currentUser, subscriptions }) => (
 )
 
 
-export default connect(mapStateToProps, { fetchGames, subscribeToGames, push })(MarioGame)
+export default connect(mapStateToProps, { fetchGames, subscribeToGames, push, getCurrentGame })(MarioGame)
