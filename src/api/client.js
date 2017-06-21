@@ -14,7 +14,7 @@ const socket = io(host, {
 })
 
 const feathersClient = feathers()
-  // .configure(hooks())
+  .configure(hooks())
   .configure(socketio(socket))
   .configure(auth({
     storage: window.localStorage,
