@@ -20,7 +20,7 @@ class App extends Component {
       <MuiThemeProvider muiTheme={muiTheme}>
         <div className="App">
         <Navigation />
-          <h1>Hi :)</h1>
+          { this.props.children }
         </div>
       </MuiThemeProvider>
     );
