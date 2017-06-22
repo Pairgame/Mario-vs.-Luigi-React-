@@ -6,6 +6,7 @@ import fetchGames from '../actions/games/fetch'
 import subscribeToGames from '../actions/games/subscribe'
 import GameArea from './GameArea'
 
+
 class MarioGame extends PureComponent {
   componentWillMount() {
       const { game, fetchGames, getCurrentGame, subscribeToGames, subscribed } = this.props
@@ -19,7 +20,7 @@ class MarioGame extends PureComponent {
   render () {
     return (
       <div>
-      <GameArea />
+        <GameArea />
       </div>
     )
   }

@@ -1,0 +1,9 @@
+.score-area {
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+  margin: auto;
+  margin-top: 25px; }
+  .score-area h3 {
+    font-size: 25px;
+    text-align: center; }
