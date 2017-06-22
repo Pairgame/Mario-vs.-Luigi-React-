@@ -1,2 +1,14 @@
-body {
-  margin: 1px; }
+.game-page {
+  display: flex;
+  flex-direction: column; }
+  .game-page .game-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    height: auto;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 25px; }
+    .game-page .game-area img {
+      height: 450px; }
