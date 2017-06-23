@@ -25,7 +25,7 @@ class ClickMe extends PureComponent {
     return (
       <div className="clickbutton">
         <button >
-          <p>Click me!</p>
+          <p>Go! Go! Go!!</p>
         </button>
       </div>
     )

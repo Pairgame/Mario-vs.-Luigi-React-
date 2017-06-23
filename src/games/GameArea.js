@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import './GameArea.css'
 import ScoreArea from './ScoreArea'
 import ClickMe from './ClickMe'
+import Mario from './Mario'
+import Luigi from './Luigi'
 
 class GameArea extends PureComponent {
 
@@ -20,6 +22,8 @@ class GameArea extends PureComponent {
       <div className="game-page">
         <div className="game-area">
       		<img className="background-game" src='http://res.cloudinary.com/hedgehogs4578/image/upload/v1498062837/background_nbjnpk.jpg' />
+          <Mario />
+          <Luigi />
           <ClickMe />
         </div>
         <ScoreArea />

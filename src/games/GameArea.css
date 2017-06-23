@@ -12,3 +12,12 @@
     margin-top: 25px; }
     .game-page .game-area img {
       height: 450px; }
+      .game-page .game-area img.sprite {
+        height: 75px;
+        width: auto;
+        position: absolute;
+        bottom: 35%; }
+        .game-page .game-area img.sprite.mario {
+          left: 35%; }
+        .game-page .game-area img.sprite.luigi {
+          left: 60%; }
