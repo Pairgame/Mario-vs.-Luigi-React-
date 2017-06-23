@@ -9,22 +9,22 @@ import './ClickMe.css'
 
 
 class ClickMe extends PureComponent {
-    componentWillMount() {
+    componentWillMountfunction() {
         const { game, fetchGames, getCurrentGame, players, subscribeToGames, subscribed } = this.props
         const { clickCount } = this.props.params
 
     }
-    addClickCount() {
-      const clickCount = +1
-    }
+    // addClickCount() {
+    //   const clickCount = +1
+    // }
 
     // api needs gameId, and clickCount, playerid can be taken out of params.
 
   render() {
-    const { addClickCount } = addClickCount
+    // const { addClickCount } = addClickCount
     return (
       <div className="clickbutton">
-        <button onClick= addClickCount()>
+        <button >
           <p>Click me!</p>
         </button>
       </div>
