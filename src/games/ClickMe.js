@@ -1,35 +1,43 @@
 import React, { PureComponent } from 'react'
+import { connect } from 'react-redux'
+import { push } from 'react-router-redux'
+import getCurrentGame from '../actions/games/get'
+import fetchGames from '../actions/games/fetch'
+import subscribeToGames from '../actions/games/subscribe'
 import PropTypes from 'prop-types'
 import './ClickMe.css'
 
+
 class ClickMe extends PureComponent {
+    componentWillMountfunction() {
+        const { game, fetchGames, getCurrentGame, players, subscribeToGames, subscribed } = this.props
+        const { clickCount } = this.props.params
 
-  ClickCount() {
-    const { liked, likes } = this.props
-    const likesOtherThanYours = (likes || 0) - 1
-
-    if (liked && likesOtherThanYours > 0) {
-      return `You and ${likesOtherThanYours} others like this`
     }
+    // addClickCount() {
+    //   const clickCount = +1
+    // }
 
-    if (liked) return 'You like this'
-
-    if (likes > 0) return `${likes} other${likes > 1 ? 's' : ''} like${likes > 1 ? '' : 's'} this`
-
-    return null
-  }
+    // api needs gameId, and clickCount, playerid can be taken out of params.
 
   render() {
-    const { addClickCount } = this.props
+    // const { addClickCount } = addClickCount
     return (
       <div className="clickbutton">
-        <button onClick={ addClickCount }>
-          <p>Click me!</p>
+        <button >
+          <p>Go! Go! Go!!</p>
         </button>
       </div>
     )
   }
 }
 
+const mapStateToProps = ({ games, currentUser, subscriptions }) => (
+  {
+    games,
+    currentUser,
+    subscribed: subscriptions.includes('games'),
+  }
+)
 
-export default ClickMe
+export default connect(mapStateToProps, { fetchGames, subscribeToGames, push, getCurrentGame })(ClickMe)

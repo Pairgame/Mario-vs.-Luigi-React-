@@ -4,8 +4,8 @@
   display: inline-block;
   align-self: center; }
   .clickbutton button {
-    color: black;
-    background-color: #f4424b;
+    color: white;
+    background-color: #cc0001;
     padding: 10px;
     height: 80px;
     width: 80px;

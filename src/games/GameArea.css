@@ -12,3 +12,18 @@
     margin-top: 25px; }
     .game-page .game-area img {
       height: 450px; }
+      .game-page .game-area img.sprite {
+        height: 75px;
+        width: auto;
+        position: absolute;
+        bottom: 35%; }
+    .game-page .game-area .mario {
+      position: absolute;
+      left: 35%; }
+    .game-page .game-area .luigi {
+      left: 60%;
+      position: absolute; }
+    .game-page .game-area .vine {
+      height: 450px; }
+    .game-page .game-area .themesong {
+      display: hidden; }
