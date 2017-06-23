@@ -6,10 +6,12 @@ import ClickMe from './ClickMe'
 import Mario from './Mario'
 import Luigi from './Luigi'
 import Vine from './Vine'
+import ThemeSong from './ThemeSong'
 
 class GameArea extends PureComponent {
 
-//
+//This part should count the clicks made and send them to the API to compare between players.
+// API should then send the result to the ScoreArea
 
   render() {
 
@@ -28,6 +30,7 @@ class GameArea extends PureComponent {
           <ClickMe />
         </div>
         <ScoreArea />
+        <ThemeSong />
     	</div>
     )
   }

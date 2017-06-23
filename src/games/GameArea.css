@@ -25,3 +25,5 @@
       position: absolute; }
     .game-page .game-area .vine {
       height: 450px; }
+    .game-page .game-area .themesong {
+      display: hidden; }
