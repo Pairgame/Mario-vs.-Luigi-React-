@@ -22,7 +22,7 @@ class MarioGame extends PureComponent {
   render () {
     return (
       <div>
-        <h3>Welcome to our game where you try to make Mario or Luigi win the race by making them climb the fastest. Make your character climb by clicking or tapping the red button as often as you can within the given time limit. Good luck! </h3>
+        <h3>Welcome to the Mario race game, where you try to make Mario or Luigi win the race by making them climb the fastest. Make your character climb by clicking or tapping the red button as often as you can within the given time limit. Good luck! </h3>
         <GameArea />
       </div>
     )

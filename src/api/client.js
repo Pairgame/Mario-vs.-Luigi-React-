@@ -6,7 +6,7 @@ import hooks from 'feathers-hooks'
 import auth from 'feathers-authentication-client'
 import io from 'socket.io-client/dist/socket.io'
 
-const host = process.env.API_HOST || 'https://mariogame-api.herokuapp.com/'
+const host = 'http://localhost:3030'
 export const FEATHERS_TOKEN_KEY = 'currentPlayer'
 
 const socket = io(host, {
