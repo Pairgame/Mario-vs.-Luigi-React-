@@ -47,7 +47,7 @@ class Lobby extends PureComponent {
           key={index}
           onClick={this.goToGame(game._id).bind(this)}
           rightIcon={<ActionIcon />}
-          primaryText={game.name} />
+          primaryText={`Mario's Game`} />
       )
     }
 
